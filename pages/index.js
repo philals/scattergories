@@ -30,14 +30,12 @@ export default function Home() {
         <h1 className={styles.title}>Welcome to Scattergories</h1>
         <p>.</p>
         <button
-          styles={{ "touch-action": "manipulation" }}
           onClick={() => setPlayClicked(true)}
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         >
           New Game
         </button>
       </main>
-      v3
     </div>
   );
 }
