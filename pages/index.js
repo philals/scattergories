@@ -9,7 +9,11 @@ export default function Home() {
     if (playClicked) {
       const audio = new Audio("./xmas.mp3");
       audio.volume = parseFloat(1);
-      audio.play();
+
+      audio.addEventListener("canplaythrough", (event) => {
+        /* the audio is now playable; play it if permissions allow */
+        audio.play();
+      });
     }
   }, [playClicked]);
 
