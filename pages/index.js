@@ -1,8 +1,18 @@
 import Head from "next/head";
-import Image from "next/image";
+import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
+  const playClicked = useState(false);
+
+  useEffect(() => {
+    if (playClicked) {
+      const audio = new Audio("xmas.mpe");
+      audio.volume = parseFloat(1);
+      audio.play();
+    }
+  }, [playClicked]);
+
   return (
     <div className={styles.container}>
       <Head>
