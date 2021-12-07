@@ -14,6 +14,8 @@ export default function Home() {
         /* the audio is now playable; play it if permissions allow */
         audio.play();
       });
+
+      document.body.appendChild(audio);
     }
   }, [playClicked]);
 
@@ -34,7 +36,7 @@ export default function Home() {
           New Game
         </button>
       </main>
-      v2
+      v3
     </div>
   );
 }
