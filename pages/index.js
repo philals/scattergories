@@ -34,7 +34,7 @@ export default function Home() {
           New Game
         </button>
       </main>
-      v1
+      v2
     </div>
   );
 }
